@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+a{
+   text-decoration: none;
+   color: #0000cd;
+
+}
+
+a:hover{
+  color: #666;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-size: 100%;
+
+}
+
+address,strong{
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face{
+  font-family: 'NGothic';
+  src: url('../font/NanumGothic.woff') format('woff');
+}
+
+@font-face{
+  font-family: 'NGothicEB';
+  src: url('../font/NanumGothicExtraBold.woff') format('woff');
+}
+
+body{
+   font: 11pt 'NGothicEB', Gulim; /*첫번째 서체 안보이면 두번째 서체로*/
+   
+}

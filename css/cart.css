@@ -1,0 +1,340 @@
+@charset "utf-8";
+
+html, body{
+  height: 100%;
+  overflow-x: hidden;
+}
+
+/*-----------header시작---------*/
+
+header{
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+ }
+ 
+ header h1{
+  position: relative;
+  margin: 20px;
+  top: 20px;
+  left: 20px;
+ }
+ 
+ .logotext{
+   position: relative;
+   margin: 0 auto;
+   left: 400px;
+   top: -100px;
+ }
+ 
+ header .sub_menu{
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  font: bold 1em "Helvetica"; 
+ }
+ 
+ header .sub_menu::after{
+ content: "";
+ display: block;
+ clear: both;
+ }
+ 
+ header .sub_menu li {
+   position: relative;
+   float: left;
+   text-align: center;
+   margin-left: 8px;
+   top: 75px;
+ }
+ 
+ header .dnlcl{
+   position: absolute;
+   right: -450px;
+   font: bold 1.1em "Helvetica"; 
+ }
+ 
+ header .sub_menu li p{
+  border-radius: 5px;
+  border: 1px solid rgb(255, 255, 255);
+  background: rgb(255, 255, 255);
+  margin-top: 20px;
+  color: #666;
+  font-style: bold;
+ }
+ 
+ 
+ .main_menu {
+  position: relative;
+  float: left;
+  right: 0px;
+  top: 20px;
+ }
+ 
+ .main_menu li{
+   position: relative;
+   float: left;
+   text-align: center;
+   border-radius: 5px;
+   background: rgb(239, 235, 235);
+   width: 100px;
+   height: 40px;
+   line-height: 40px;
+ }
+ 
+ 
+ 
+ 
+ /*2차메뉴 시작*/
+ .main_menu>li>ul{
+   width: 100%;
+   position: relative;
+   top: -74px; 
+   z-index: 100;
+   opacity: 0;
+   visibility: hidden;
+   
+ }
+ 
+ .main_menu ul>li>a{
+   display: block;
+   text-align: center;
+   height: 30px;
+   color: rgb(112, 112, 112);
+   text-decoration: none;
+   font: normal 0.9em/30px "Helvetica"; 
+ }
+ 
+ .main_menu ul>li>a:hover {
+   color: rgb(28, 19, 151);
+   background-color: rgb(222, 239, 245);
+   border-radius: 5px;
+ }
+ 
+ .main_menu>li:hover>ul {
+   opacity: 1;
+   visibility: visible;
+   transition: all 0.5s;
+ }
+ 
+ .main_menu ul>li{
+    height: 0px;
+    line-height: 0px;
+ }
+ 
+ .main_menu>li:hover>ul>li{
+   position: relative;
+   height: 30px;
+   right: 8px;
+   line-height: 30px;
+   transition: all 0.5s;
+ }
+ 
+
+/*2차메뉴 끝*/
+
+/*-----------header끝--------------*/
+/*-----------sectiont 시작---------*/
+
+section{
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+  top: -10px;
+  color: rgb(102, 99, 99);
+  border-top: 1px solid gray; /*메뉴하단 선 추가시 수정*/
+
+
+}
+
+#cart h1{
+  margin-top: 60px;  /*메뉴하단 선 추가시 수정*/
+  margin-bottom: 20px;
+
+}
+
+#cart h1 .cartlogo{
+  position: relative;
+  left: 50px;
+
+  
+}
+
+#cart h1 .carttext{
+  position: relative;
+  bottom: 20px;
+  left: 50px;
+  font-size: 1.6em;
+ 
+}
+
+
+table, td{
+  border: 1px solid #000;
+  
+  
+}
+
+table{
+  width: 1100px;
+  height: 100px;
+  border-collapse: collapse;
+  margin: 0 auto;
+
+
+}
+
+thead{
+  background-color: rgb(210, 210, 210);
+}
+
+
+td{
+  height: 50px;
+  text-align: center;
+}
+
+td a{
+  color: rgb(102, 99, 99);
+}
+
+td a:hover{
+  color: lightgray;
+}
+
+#cart_button{
+ position: relative;
+ margin-top: 10px;
+ left: 50px;
+}
+
+#total{
+  position: relative;
+  width: 100%;
+  text-align: center;
+  top: 30px;
+ 
+}
+
+#total ul{
+  width: 1100px;
+  height: 100px;
+  border-radius: 1px;
+  border: 2px solid rgb(236, 218, 228);
+  border-radius: 3px;
+  margin: 0 auto;
+ 
+}
+
+#total ul:after{
+ content: "";
+ display: block;
+ clear: both;
+}
+
+#total ul li{
+  margin: 0 0 60px 60px;
+  float: left;
+  line-height: 93px;
+  color: rgb(53, 51, 51);
+  font-size: 1.3em;
+}
+
+
+#total_button{
+ position: relative;
+ width: 1000px;
+ margin: 0 auto;
+ top: 10px;
+
+}
+
+#total_button input{
+  margin-left: 47px;
+  margin-right: 50px;
+}
+
+#allorder{
+  border: 1px solid rgb(179, 224, 238);
+  background: rgb(179, 224, 238);
+  border-radius: 5px;
+  width: 400px;
+  height: 70px;
+
+}
+
+#someorder{
+  border: 1px solid rgb(214, 231, 236);
+  background: rgb(214, 231, 236);
+  border-radius: 5px;
+  width: 400px;
+  height: 70px;
+
+}
+
+#cart_info{
+  position: relative;
+  top: 62px;
+  background-color:rgb(234, 231, 231); 
+  width: 900px;
+  margin: 0 auto;
+  height: 200px;
+  border: 5px double gray;
+  border-radius: 3px;
+
+}
+
+#cart_info p{
+  padding: 16px;
+  margin-left: 30px;
+
+}
+
+#cart_info p strong{
+  color:rgb(28, 19, 151);
+}
+
+
+/*-----------sectiont 끝---------*/
+
+/*--------------footer 시작----------*/
+
+footer{
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+  height: 150px;
+  color:  rgb(180, 173, 173);
+  border-top: 1px solid gray;
+  top: 140px;
+}
+
+footer h1{
+  margin: 20px;   
+}
+
+#info span{
+  display: block;
+  font: normal 0.9em "Helvetica"; 
+}
+
+#contact span{
+  display: block;
+  font: bold 0.9em "Helvetica"; 
+ 
+}
+
+#info{
+  position: relative;
+  bottom: 120px;
+  left: 200px;
+}
+
+#contact{
+  position: relative;
+  bottom:  200px;
+  left: 800px;
+ 
+}
+
+/*--------------footer 끝----------*/

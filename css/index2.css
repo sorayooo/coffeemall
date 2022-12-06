@@ -1,0 +1,243 @@
+@charset "utf-8";
+
+html, body{
+  height: 100%;
+  background-color: white;
+}
+
+
+/*-----------header시작---------*/
+header{
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+ }
+ 
+ header h1{
+  position: relative;
+  margin: 20px;
+  top: 20px;
+  left: 20px;
+ }
+ 
+ .subsub{
+  position:absolute;
+  font-size:30px;
+  left:520px;
+  top:250px;
+}
+
+ .logotext{
+   position: relative;
+   margin: 0 auto;
+   left: 400px;
+   top: -100px;
+ }
+ 
+ header .sub_menu{
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  font: bold 1em "Helvetica"; 
+ }
+ 
+ header .sub_menu::after{
+ content: "";
+ display: block;
+ clear: both;
+ }
+ 
+ header .sub_menu li {
+   position: relative;
+   float: left;
+   text-align: center;
+   margin-left: 8px;
+   top: 75px;
+ }
+ 
+ header .dnlcl{
+   position: absolute;
+   right: -450px;
+   font: bold 1.1em "Helvetica"; 
+ }
+ 
+ 
+ header .sub_menu li p{
+  border-radius: 5px;
+  border: 1px solid rgb(255, 255, 255);
+  background: rgb(255, 255, 255);
+  margin-top: 20px;
+  color: #666;
+  font-style: bold;
+ }
+ 
+ 
+ .main_menu {
+  position: relative;
+  float: left;
+  right: 0px;
+  top: 20px;
+ }
+ 
+ .main_menu li{
+   position: relative;
+   float: left;
+   text-align: center;
+   border-radius: 5px;
+   background: rgb(239, 235, 235);
+   width: 100px;
+   height: 40px;
+   line-height: 40px;
+ }
+ 
+ 
+ 
+ 
+ /*2차메뉴 시작*/
+ .main_menu>li>ul{
+   width: 100%;
+   position: relative;
+   top: -74px; 
+   z-index: 100;
+   opacity: 0;
+   visibility: hidden;
+   
+ }
+ 
+ .main_menu ul>li>a{
+   display: block;
+   text-align: center;
+   height: 30px;
+   color: rgb(112, 112, 112);
+   text-decoration: none;
+   font: normal 0.9em/30px "Helvetica"; 
+ }
+ 
+ .main_menu ul>li>a:hover {
+   color: rgb(28, 19, 151);
+   background-color: rgb(222, 239, 245);
+   border-radius: 5px;
+ }
+ 
+ .main_menu>li:hover>ul {
+   opacity: 1;
+   visibility: visible;
+   transition: all 0.5s;
+ }
+ 
+ .main_menu ul>li{
+    height: 0px;
+    line-height: 0px;
+ }
+ 
+ .main_menu>li:hover>ul>li{
+   position: relative;
+   height: 30px;
+   right: 8px;
+   line-height: 30px;
+   transition: all 0.5s;
+ }
+
+
+
+
+/*2차메뉴 끝*/
+
+/*-----------header끝---------*/
+
+
+
+
+.a1{
+  position:absolute;
+  left:500px;
+  top:350px;
+  font-size: 20px;
+  
+}
+
+.a2{
+   position:absolute;
+   left:610px;
+   top:400px;
+   
+}
+.a3{
+
+   position:absolute;
+   left:600px;
+   top:730px;
+}
+
+.a4{
+   position:absolute;
+   left:490px;
+   top:850px;
+   font-size:20px;
+}
+
+.a5{
+  position:absolute;
+  left:610px;
+  top:900px;
+}
+
+.a6{
+  position:absolute;
+  left:600px;
+  top:1230px;
+}
+
+.a7{
+  position: absolute;
+  top:1300px;
+  left:880px;
+}
+
+
+
+
+
+
+
+/*--------------footer 시작----------*/
+
+footer{
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+  height: 150px;
+  top:1300px;
+  color:  rgb(180, 173, 173);
+  border-top: 1px solid gray;
+}
+
+footer h1{
+  margin: 20px;   
+}
+
+#info span{
+  display: block;
+  font: normal 0.9em "Helvetica"; 
+}
+
+#contact span{
+  display: block;
+  font: bold 0.9em "Helvetica"; 
+ 
+}
+
+#info{
+  position: relative;
+  bottom: 120px;
+  left: 200px;
+}
+
+#contact{
+  position: relative;
+  bottom:  200px;
+  left: 800px;
+ 
+}
+
+/*--------------footer 끝----------*/
